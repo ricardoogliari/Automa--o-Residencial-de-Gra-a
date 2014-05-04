@@ -1,0 +1,11 @@
+int analogin0 = 0; // Pino em será ligado o LDR 
+
+void setup(){
+  Serial.begin(9600); 
+}
+
+void loop(){
+  int valor = analogRead(analogin0); 
+  Serial.println(valor);
+  delay(2000);
+}
